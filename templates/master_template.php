@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,14 +40,13 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#"><?=PROJECT_NAME?></a>
+			<a class="navbar-brand" href="<?=BASE_URL?>"><?=PROJECT_NAME?></a>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li <?= $controller == "posts" ? 'class="active"' : ''?>><a href="<?BASE_URL?>">Posts</a></li>
-				<li <?= $controller == "tags" ? 'class="active"' : ''?>><a href="<?BASE_URL?>tags">Tags</a></li>
-				<li <?= $controller == "users" ? 'class="active"' : ''?>><a href="<?BASE_URL?>users">Users</a></li>
-
+				<li <?= $controller == "posts" ? 'class="active"' : ''?>><a href="<?=BASE_URL?>">Posts</a></li>
+				<li <?= $controller == "tags" ? 'class="active"' : ''?>><a href="<?=BASE_URL?>tags">Tags</a></li>
+				<li <?= $controller == "users" ? 'class="active"' : ''?>><a href="<?=BASE_URL?>users">Users</a></li>
 			</ul>
 		</div><!--/.nav-collapse -->
 	</div>
